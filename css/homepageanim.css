@@ -1,0 +1,134 @@
+/* CSS Document */
+
+.bodyFill {
+	height:100%;
+	width:0%;
+	position: fixed;
+	left:0px;
+	top:0;
+	background:#CF0508;
+	z-index:2;
+	
+	}
+
+.bodyFillSecond {
+	height:100%;
+	width:0%;
+	position: fixed;
+	right:0px;
+	top:0;
+	background:#363636;
+	z-index:1;
+	
+	}
+	
+.logoContainer {
+	position: relative;
+	z-index:3;	
+	}
+
+
+@-webkit-keyframes movingboxFirst{
+			0%  {width:0%;}			
+			100% {width:100%;}
+		}
+		
+@keyframes movingboxFirst{
+			0%  {width:0%;}			
+			100% {width:100%;}
+		}
+		
+@-webkit-keyframes movingboxSecond{
+			0%  {width:0%;}			
+			100% {width:100%;}
+		}
+		
+@keyframes movingboxSecond{
+			0%  {width:0%;}			
+			100% {width:100%;}
+		}
+
+.bodyFill {	
+
+	-webkit-animation-name: movingboxFirst;
+	animation-name: movingboxFirst;
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;	
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+	 animation-timing-function: linear;     
+    -webkit-animation-iteration-count: 1;
+	 animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+	 animation-direction: alternate;
+    -webkit-animation-play-state: running;
+	animation-play-state: running;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+   
+}
+
+.bodyFillSecond {	
+
+	-webkit-animation-name: movingboxSecond;
+	animation-name: movingboxSecond;
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;	
+	-webkit-animation-duration: 0.6s;
+	animation-duration: 0.6s;
+    -webkit-animation-timing-function: linear;
+	 animation-timing-function: linear;     
+    -webkit-animation-iteration-count: 1;
+	 animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+	 animation-direction: alternate;
+    -webkit-animation-play-state: running;
+	animation-play-state: running;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	
+   
+}
+
+.enterButton {
+	-webkit-animation-name: enterButtonAnim;
+	animation-name: enterButtonAnim;
+	-webkit-animation-delay: 0s;
+	animation-delay: 0s;	
+	-webkit-animation-duration: 2.2s;
+	animation-duration: 2.2s;
+    -webkit-animation-timing-function: linear;
+	 animation-timing-function: linear;     
+    -webkit-animation-iteration-count: 1;
+	 animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+	 animation-direction: alternate;
+    -webkit-animation-play-state: running;
+	animation-play-state: running;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;	
+	
+	}
+	
+
+@keyframes enterButtonAnim {
+    from {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+	70% {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    90% {
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}

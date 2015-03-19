@@ -1,0 +1,74 @@
+/* app css stylesheet */
+
+body {	
+	
+	
+	}
+
+.welcomePage {
+    display: table;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+	/*background:#d40000;*/
+}
+
+.wrapper {
+	display: table-cell;
+    vertical-align: middle;	
+	text-align:center;	
+}
+
+
+.btn-enter {
+	font-size:1.2em;
+	padding:5px 25px 5px 25px;
+	
+	}
+
+.btn-opt {
+	width:100%;
+	display:block;
+	margin-bottom:10px;
+	text-align:left;
+	border-radius:0px;
+	
+	
+	
+	}
+	
+.btnTitle {	
+	
+}
+
+.btnTitle::before {
+	content: " ";	
+    font-family: FontAwesome;
+	
+	/*-ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); 
+    transform: rotate(90deg); */
+	}
+
+.btn-sub {
+	width:100%;
+	display:block;	
+	margin-bottom:5px;
+	text-align:left;
+	border-radius:0px;
+	background:#ededed; 
+	border:1px solid #363636;	
+	
+	}
+
+.submenu {padding:10px;}
+	
+.navigationRight {
+	width:250px;
+	position:fixed;
+	top:0;
+	right:0;
+	background:#eee;	
+	padding:10px;
+	
+	}
